@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.example.ekran.customView.EkranImageView
+                android:id="@+id/avatarSubscribe"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                app:failureImage="@drawable/user"
+                app:placeholderImage="@drawable/user" />
+            <TextView
+                android:id="@+id/txtSubscribeUser"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_marginStart="25dp"
+                android:textAppearance="@style/TextAppearance.Ekran.LabelMedium"
+                tools:text="shahramzs"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteSubscriber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Delete"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtSubscribeTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/Neutral_Variant50"
+            android:textAppearance="@style/TextAppearance.Ekran.LabelSmall"
+            tools:text="12 jan 2023"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

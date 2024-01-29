@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.addVideo.uploadVideo.UploadVideoActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/deleteVideo"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="حذف فایل"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:id="@+id/imgViewDeleteVideo"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_cancel_24" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtUploading"
+                    android:text="آماده برای بارگزاری"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.Ekran.LabelLarge"/>
+
+                <com.example.ekran.customView.EkranImageView
+                    android:id="@+id/uploadThumbnail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    app:roundedCornerRadius="12dp"
+                    android:layout_weight="0.7"
+                    android:scaleType="fitCenter"
+                    android:layout_marginEnd="12dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_gravity="bottom">
+                <TextView
+                    android:id="@+id/uploadDuration"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    tools:text="3min"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.Ekran.LabelMedium"/>
+                <TextView
+                    android:id="@+id/uploadSize"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    tools:text="10MB"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.Ekran.LabelMedium"/>
+                <TextView
+                    android:id="@+id/uploadLength"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    tools:text="2988 *2765"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.Ekran.LabelMedium"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:padding="12dp">
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressBarVideoUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/progressUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.Ekran.LabelMedium"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="10dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:fillViewport="true"
+            android:scrollbarStyle="insideInset"
+            android:layoutDirection="rtl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadeScrollbars="true"
+                android:isScrollContainer="true"
+                android:orientation="vertical"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUploadVideoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:baselineAligned="true"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    android:enabled="true"
+                    android:hint="عنوان ویدیو"
+                    android:textAlignment="gravity"
+                    app:boxCollapsedPaddingTop="2dp"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="false"
+                    app:endIconDrawable="@drawable/baseline_cancel_24"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieUploadVideoTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUploadDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:baselineAligned="true"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    android:enabled="true"
+                    android:hint="توضیحات ویدیو"
+                    android:textAlignment="gravity"
+                    app:boxCollapsedPaddingTop="2dp"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="false"
+                    app:endIconDrawable="@drawable/baseline_cancel_24"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieUploadVideoDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="5"
+                        android:maxLines="6"
+                        android:minLines="3" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUploadVideoTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:baselineAligned="true"
+                    android:clickable="true"
+                    android:elevation="8dp"
+                    android:enabled="true"
+                    android:hint="برچسب ویدیو"
+                    android:textAlignment="gravity"
+                    app:boxCollapsedPaddingTop="2dp"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="false"
+                    app:endIconDrawable="@drawable/baseline_cancel_24"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:helperText="حداقل ۳ تگ برای ویدیوی خود قرار بدهید"
+                    app:helperTextEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupItems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tieUploadVideoTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Spinner
+                    android:id="@+id/comment_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="match_parent"
+                    android:entries="@array/comment_status"
+                    android:spinnerMode="dropdown"/>
+
+                <Spinner
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:dropDownWidth="match_parent"
+                    android:entries="@array/category"
+                    android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/uploadVideoSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Ekran.LabelLarge"
+                        android:layout_gravity="right"
+                        android:text="ارسال" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/uploadVideoCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.Ekran.LabelLarge"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="200dp"
+                        android:text="لغو" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

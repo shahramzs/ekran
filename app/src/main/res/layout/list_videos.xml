@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <com.example.ekran.customView.EkranImageView
+            android:id="@+id/imageVide_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/add_video_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="00:23"
+            android:background="@drawable/background_duration"
+            android:padding="5dp"
+            android:textColor="@color/Tertiary100"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/add_video_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12MB"
+            android:background="@drawable/background_duration"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:textColor="@color/Tertiary100"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_video_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تایید"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+

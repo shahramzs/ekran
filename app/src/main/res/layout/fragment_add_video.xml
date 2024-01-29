@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".feature.addVideo.AddVideoFragment"
+    android:padding="10dp"
+    android:layout_marginTop="56dp">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="vertical"
+       android:layout_marginTop="16dp">
+      <com.example.ekran.customView.EkranVideoView
+          android:id="@+id/addVideoView"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/_200sdp"
+          app:auto_show="true"
+          app:show_buffering="never"
+          app:show_shuffle_button="false"
+          app:show_subtitle_button="false"
+          app:show_vr_button="false"
+          app:use_controller="false"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/listVideoRV"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:clipToPadding="false"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"/>
+
+   </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

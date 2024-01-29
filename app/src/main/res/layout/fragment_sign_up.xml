@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/sign_up_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:trackCornerRadius="@dimen/_3sdp"
+        style="@style/Widget.Material3.LinearProgressIndicator"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:showAnimationBehavior="inward"
+        app:hideAnimationBehavior="outward"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <com.google.android.material.card.MaterialCardView
+                android:alpha="0.8"
+                android:id="@+id/card"
+                style="?attr/materialCardViewElevatedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:alwaysDrawnWithCache="true"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                app:cardElevation="3dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:animateLayoutChanges="true"
+                        android:animationCache="true"
+                        android:elevation="5dp"
+                        android:enabled="true"
+                        android:hint="username"
+                        app:boxCollapsedPaddingTop="2dp"
+                        app:boxStrokeWidth="2dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconDrawable="@drawable/baseline_cancel_24"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="true"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:startIconDrawable="@drawable/outline_person_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:animateLayoutChanges="true"
+                        android:animationCache="true"
+                        android:elevation="5dp"
+                        android:enabled="true"
+                        android:hint="email"
+                        app:boxCollapsedPaddingTop="2dp"
+                        app:boxStrokeWidth="2dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconDrawable="@drawable/baseline_cancel_24"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="true"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:startIconDrawable="@drawable/outline_email_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:elevation="5dp"
+                        android:enabled="true"
+                        android:hint="password"
+                        app:boxStrokeWidth="2dp"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:errorEnabled="true"
+                        app:helperTextEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        app:passwordToggleEnabled="true"
+                        app:startIconDrawable="@drawable/outline_lock_24">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/textInputPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layoutDirection="rtl">
+
+                        <Button
+                            android:id="@+id/iconButtonSignUp"
+                            style="?attr/materialIconButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.18"
+                            android:gravity="center"
+                            android:insetLeft="9dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            app:icon="@drawable/outline_arrow_back_ios_24"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconSize="35dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd ="16dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_weight="0.5"
+                            android:gravity="left"
+                            android:text="ثبت نام"
+                            android:textSize="@dimen/_8sdp"
+                            android:textAppearance="@style/TextAppearance.Ekran.LabelMedium"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/textButtonForget"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="کلمه عبور خود را فراموش کردید؟"
+                        android:textSize="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.Ekran.LabelSmall"/>
+
+                    <Button
+                        android:id="@+id/textButtonGoToSignIn"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ورود"
+                        android:textSize="@dimen/_8sdp"
+                        android:textAppearance="@style/TextAppearance.Ekran.LabelSmall"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

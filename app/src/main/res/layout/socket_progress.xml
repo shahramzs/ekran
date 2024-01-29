@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فایل ویدیویی در حال تبدیل می باشد لطفا صبر بفرمایید."
+        android:textAppearance="@style/TextAppearance.Ekran.LabelLarge"
+        android:layout_marginTop="16dp"/>
+<com.google.android.material.progressindicator.LinearProgressIndicator
+    android:id="@+id/socket_progress_indicator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/socket_progress_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="0 %"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.Ekran.BodyMedium"/>
+</LinearLayout>

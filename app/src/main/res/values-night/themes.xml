@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme.  parent = Theme.MaterialComponents.DayNight.DarkActionBar -->
+    <style name="Theme.Ekran" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Primary80</item>
+        <item name="colorAccent">@color/Primary20</item>
+        <item name="colorPrimaryVariant">@color/Primary80</item>
+        <item name="colorOnPrimary">@color/Primary20</item>
+        <item name="colorPrimaryContainer">@color/Primary30</item>
+        <item name="colorOnPrimaryContainer">@color/Primary90_dark</item>
+        <item name="colorPrimaryInverse">@color/Primary40</item>
+        <item name="colorPrimaryFixed">@color/Primary90_dark</item>
+        <item name="colorPrimaryFixedDim">@color/Primary80</item>
+        <item name="colorOnPrimaryFixed">@color/Primary10</item>
+        <item name="colorOnPrimaryFixedVariant">@color/Primary30</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Secondary80</item>
+        <item name="colorSecondaryVariant">@color/Secondary80</item>
+        <item name="colorOnSecondary">@color/Secondary20</item>
+        <item name="colorSecondaryContainer">@color/Secondary30</item>
+        <item name="colorOnSecondaryContainer">@color/Secondary90_dark</item>
+        <item name="colorSecondaryFixed">@color/Primary90_dark</item>
+        <item name="colorSecondaryFixedDim">@color/Primary80</item>
+        <item name="colorOnSecondaryFixed">@color/Primary10</item>
+        <item name="colorOnSecondaryFixedVariant">@color/Primary30</item>
+        <!--    Tertiary color    -->
+        <item name="colorTertiary">@color/Tertiary80</item>
+        <item name="colorOnTertiary">@color/Tertiary20</item>
+        <item name="colorTertiaryContainer">@color/Tertiary30</item>
+        <item name="colorOnTertiaryContainer">@color/Tertiary90_dark</item>
+        <item name="colorTertiaryFixed">@color/Primary90_dark</item>
+        <item name="colorTertiaryFixedDim">@color/Primary80</item>
+        <item name="colorOnTertiaryFixed">@color/Primary10</item>
+        <item name="colorOnTertiaryFixedVariant">@color/Primary30</item>
+        <!--   error color     -->
+        <item name="colorError">@color/Error80</item>
+        <item name="colorOnError">@color/Error20</item>
+        <item name="colorErrorContainer">@color/Error30</item>
+        <item name="colorOnErrorContainer">@color/Error90</item>
+
+        <item name="background">@color/Neutral10_dark</item>
+        <item name="colorOnBackground">@color/Neutral90</item>
+        <item name="colorSurface">@color/Neutral10_dark</item>
+        <item name="colorOnSurface">@color/Neutral90</item>
+
+        <item name="colorSurfaceVariant">@color/Neutral_Variant30_dark</item>
+        <item name="colorOnSurfaceVariant">@color/Neutral_Variant80_dark</item>
+        <item name="colorOutline">@color/Neutral_Variant60</item>
+        <item name="colorOutlineVariant">@color/Neutral_Variant30_dark</item>
+        <item name="colorSurfaceContainerHighest">@color/Neutral10</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/Neutral10</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:navigationBarColor">@color/Neutral99</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:actionBarTabBarStyle">@color/Neutral99</item>
+
+        <!--        font style -->
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Ekran.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Ekran.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Ekran.DisplaySmall</item>
+
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Ekran.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Ekran.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Ekran.HeadlineSmall</item>
+
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Ekran.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Ekran.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Ekran.TitleSmall</item>
+
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Ekran.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Ekran.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Ekran.BodySmall</item>
+
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Ekran.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Ekran.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Ekran.LabelSmall</item>
+
+        <item name="dividerColor">@color/Neutral_Variant80</item>
+        <item name="dividerColorOnFocus">@color/Neutral99</item>
+
+        <item name="android:lineSpacingExtra">6dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+</resources>

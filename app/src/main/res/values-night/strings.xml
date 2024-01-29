@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">search</string>
+    <string name="notification">notification</string>
+    <string name="userAvatar">userAvatar</string>
+    <string name="more_option">More Option</string>
+    <string name="watch_later">Save to Watch Later</string>
+    <string name="download_video">Download Video</string>
+    <string name="share_video">Share Video</string>
+    <string name="not_interested">Not Interested</string>
+    <string name="report">Report Video</string>
+    <string name="empty_state_message">وارد حساب کاربری خود شوید</string>
+    <string name="profile_part">حساب کاربری</string>
+    <string name="no_video">ویدیویی در گالری شما یافت نشد.</string>
+    <string-array name="comment_status">
+        <item>وضعیت دیدگاه</item>
+        <item>نظردهی غیرفعال</item>
+        <item>نظردهی فعال باشد</item>
+        <item>نظرات پس از تایید نمایش داده شوند</item>
+    </string-array>
+    <string-array name="category">
+        <item>دسته بندی ها</item>
+        <item>گیم</item>
+        <item>ورزشی</item>
+        <item> کارتون</item>
+        <item>طنز</item>
+        <item>آموزشی</item>
+        <item>تفریحی</item>
+        <item>فیلم</item>
+        <item>مذهبی</item>
+        <item>موسیقی</item>
+        <item>خبری</item>
+        <item>سیاسی</item>
+        <item>علم و تکنولوژی</item>
+        <item>حوادث</item>
+        <item>گردشگری</item>
+        <item>حیوانات</item>
+        <item>متفرقه</item>
+        <item>تبلیغات</item>
+        <item>هنری</item>
+        <item>بانوان</item>
+        <item>سلامت</item>
+        <item>آشپزی</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Sort By</item>
+        <item>Relevance</item>
+        <item>Upload date</item>
+        <item>View count</item>
+        <item>Rating</item>
+    </string-array>
+    <string-array name="features">
+        <item>Features</item>
+        <item>Live</item>
+        <item>4K</item>
+        <item>Creative Commons</item>
+        <item>360 degree</item>
+        <item>VR180</item>
+        <item>HD</item>
+        <item>3D</item>
+        <item>HDR</item>
+    </string-array>
+    <string-array name="durations">
+        <item>Duration</item>
+        <item>Under 4 minutes</item>
+        <item>4 - 20 minutes</item>
+        <item>Over 20 minutes</item>
+    </string-array>
+    <string-array name="type">
+        <item>Type</item>
+        <item>Video</item>
+        <item>Channel</item>
+        <item>Playlist</item>
+        <item>Movie</item>
+    </string-array>
+    <string-array name="upload_date">
+        <item>Upload Date</item>
+        <item>Last hour</item>
+        <item>Today</item>
+        <item>This week</item>
+        <item>This month</item>
+        <item>This year</item>
+    </string-array>
+</resources>

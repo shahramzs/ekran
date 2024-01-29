@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/subscription"
+        android:icon="@drawable/outline_subscriptions_24"
+        android:title="@string/subscription" />
+    <item
+        android:id="@+id/library"
+        android:icon="@drawable/outline_video_library_24"
+        android:title="@string/library" />
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/outline_add_circle_outline_24"
+        android:title="@string/addVideo" />
+    <item
+        android:id="@+id/live"
+        android:icon="@drawable/outline_live_tv_24"
+        android:title="@string/live" />
+    <item
+        android:id="@+id/main"
+        android:icon="@drawable/outline_home_24"
+        android:title="@string/home" />
+</menu>

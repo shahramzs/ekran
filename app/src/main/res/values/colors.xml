@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--                     Light Theme                           -->
+
+<!--    primary color   -->
+    <color name="Primary40">#9C4146</color>
+    <color name="Primary100">#ffffff</color>
+    <color name="Primary90">#FFDADB</color>
+    <color name="Primary10">#400009</color>
+<!--  secondary color  -->
+    <color name="Secondary40">#775657</color>
+    <color name="Secondary100">#ffffff</color>
+    <color name="Secondary90">#FFDAD9</color>
+    <color name="Secondary10">#2C1516</color>
+<!--Tertiary color  -->
+    <color name="Tertiary40">#7B581B</color>
+    <color name="Tertiary100">#ffffff</color>
+    <color name="Tertiary90">#FFDDAB</color>
+    <color name="Tertiary10">#291800</color>
+<!-- Error color -->
+    <color name="Error40">#B3261E</color>
+    <color name="Error100">#ffffff</color>
+    <color name="Error90">#F9DEDC</color>
+    <color name="Error10">#410E0B</color>
+<!-- Background and surface color -->
+    <color name="Neutral99">#FFFBFA</color>
+    <color name="Neutral10">#201A1A</color>
+<!--    surface variant and outline -->
+    <color name="Neutral_Variant90">#F4DDDC</color>
+    <color name="Neutral_Variant30">#534343</color>
+    <color name="Neutral_Variant50">#847271</color>
+    <color name="Neutral_Variant80">#D7C2C1</color>
+
+<!--    Dark Theme       -->
+
+    <!--    primary color   -->
+    <color name="Primary80">#FFB3B6</color>
+    <color name="Primary20">#5F131C</color>
+    <color name="Primary30">#7E2A30</color>
+    <color name="Primary90_dark">#FFDADB</color>
+    <!--  secondary color  -->
+    <color name="Secondary80">#E6BCBC</color>
+    <color name="Secondary20">#44292A</color>
+    <color name="Secondary30">#5D3F3F</color>
+    <color name="Secondary90_dark">#FFDAD9</color>
+    <!--Tertiary color  -->
+    <color name="Tertiary80">#EEBF78</color>
+    <color name="Tertiary20">#442B00</color>
+    <color name="Tertiary30">#604003</color>
+    <color name="Tertiary90_dark">#FFDDAB</color>
+    <!-- Error color -->
+    <color name="Error80">#F2B8B5</color>
+    <color name="Error20">#601410</color>
+    <color name="Error30">#8C1D18</color>
+    <color name="Error9_dark">#F9DEDC</color>
+    <!-- Background and surface color -->
+    <color name="Neutral90">#ECDFDF</color>
+    <color name="Neutral10_dark">#201A1A</color>
+    <!--    surface variant and outline -->
+    <color name="Neutral_Variant30_dark">#534343</color>
+    <color name="Neutral_Variant80_dark">#D7C2C1</color>
+    <color name="Neutral_Variant60">#A08C8C</color>
+</resources>
